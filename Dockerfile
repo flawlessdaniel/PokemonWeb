@@ -3,8 +3,8 @@ FROM node:latest as node
 WORKDIR /app
 COPY . .
 RUN npm install
-RUN npm build --prod
+RUN npm run build --prod
 
 # stage 2
 FROM nginx:alpine
-COPY --from=node /app/dist /usr/share/nginx/html
+COPY --from=node /app/dist/pokemonweb /usr/share/nginx/html

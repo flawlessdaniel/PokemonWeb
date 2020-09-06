@@ -9,7 +9,7 @@ export class PokedexService {
   constructor(private http: HttpClient) { }
 
   getToken(): Promise<any> {
-    const url = `https://localhost:44348/api/Auth/Login`;
+    const url = `http://localhost:44369/api/Auth/Login`;
     const headers = new HttpHeaders()
     .set('Content-Type', 'application/json');
 
@@ -23,7 +23,7 @@ export class PokedexService {
   }
 
   refreshToken(): Promise<any> {
-    const url = `https://localhost:44348/api/Auth/Refresh`;
+    const url = `http://localhost:44369/api/Auth/Refresh`;
 
     const headers = new HttpHeaders()
     .set('Authorization', 'Bearer ' + sessionStorage.getItem('token'));
@@ -32,7 +32,7 @@ export class PokedexService {
   }
 
   getPokemons(): Promise<any> {
-    const url = `https://localhost:44348/api/pokedex`;
+    const url = `http://localhost:44369/api/pokedex`;
     const headers = new HttpHeaders()
     .set('Content-Type', 'application/json')
     .set('Authorization', 'Bearer ' + sessionStorage.getItem('token'));
@@ -41,7 +41,7 @@ export class PokedexService {
   }
 
   getPokemonById(id: number): Promise<any> {
-    const url = `https://localhost:44348/api/pokedex/data/` + id;
+    const url = `http://localhost:44369/api/pokedex/data/` + id;
     const headers = new HttpHeaders()
     .set('Content-Type', 'application/json')
     .set('Authorization', 'Bearer ' + sessionStorage.getItem('token'));
@@ -50,7 +50,7 @@ export class PokedexService {
   }
 
   getPokemonBySearch(key: string): Promise<any> {
-    const url = `https://localhost:44348/api/pokedex/search/` + key;
+    const url = `http://localhost:44369/api/pokedex/search/` + key;
     const headers = new HttpHeaders()
     .set('Content-Type', 'application/json')
     .set('Authorization', 'Bearer ' + sessionStorage.getItem('token'));
