@@ -1,0 +1,44 @@
+<div class="section">
+    <div class="container tim-container">
+        <div id="images">
+            <div class="container">
+                <div class="tim-title">
+                    <h3>Pokemon Data</h3>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 text-center">
+                        <a class="btn btn-default" [routerLink]="'/pokedex'">Back</a>
+                    </div>
+                    <div class="col-md-6 col-sm-6"></div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 text-center">
+                        <h4 class="images-title text-center"><b>{{data.Name.English}}</b></h4>
+                        <img src="{{data.ImageUrl}}" class="img-circle img-no-padding img-responsive" alt="Rounded Image">
+                        <p>Codigo: {{data.Codigo}}</p>
+                        <span *ngFor="let type of data.Type" class="badge badge-{{type}} text-center">{{type}}</span>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <H3>Detalle</H3><br>
+                        <p>
+                            HP: {{data.Base.HP}}
+                        </p>
+                        <p>
+                            Attack: {{data.Base.Atack}}
+                        </p>
+                        <p>
+                            Defense: {{data.Base.Defense}}
+                        </p>
+                        <p>
+                            SPAttack: {{data.Base.SPAtack}}
+                        </p>
+                        <p>
+                            SPDefense: {{data.Base.SPDefense}}
+                        </p>
+                        <p>
+                            Speed: {{data.Base.Speed}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

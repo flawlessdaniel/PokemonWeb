@@ -1,0 +1,94 @@
+:host /deep/ .badge-Grass {
+    background-color: #008000;
+    color: #fff;
+}
+
+:host /deep/ .badge-Water {
+    background-color: #00FFFF;
+    color: #fff;
+}
+
+:host /deep/ .badge-Fire {
+    background-color: #FF0000;
+    color: #fff;
+}
+
+:host /deep/ .badge-Bug {
+    background-color: #808000;
+    color: #fff;
+}
+
+:host /deep/ .badge-Poison {
+    background-color: #800080;
+    color: #fff;
+}
+
+:host /deep/ .badge-Flying {
+    background-color: #008080;
+    color: #fff;
+}
+
+:host /deep/ .badge-Normal {
+    background-color: gray;
+    color: #fff;
+}
+
+:host /deep/ .badge-Psychic {
+    background-color: #800080;
+    color: #fff;
+}
+
+:host /deep/ .badge-Ground {
+    background-color: brown;
+    color: #fff;
+}
+
+:host /deep/ .badge-Electric {
+    background-color: yellow;
+    color: #fff;
+}
+
+:host /deep/ .badge-Ice {
+    background-color: #e8ecf0;
+    color: #fff;
+}
+
+:host /deep/ .badge-Steel {
+    background-color: #c7ced4;
+    color: #fff;
+}
+
+:host /deep/ .badge-Ghost {
+    background-color: #604890;
+    color: #fff;
+}
+
+:host /deep/ .badge-Rock {
+    background-color: #333333;
+    color: #fff;
+}
+
+:host /deep/ .badge-Fighting {
+    background-color: #ff7b00;
+    color: #fff;
+}
+
+:host /deep/ .badge-Fairy {
+    background-color: #f6dee8;
+    color: #fff;
+}
+
+:host /deep/ .badge-Dragon {
+    background-color: #333333;
+    color: #fff;
+}
+
+:host /deep/ .badge-Dark {
+    background-color: #000000;
+    color: #fff;
+}
+
+:host /deep/ .img-circle {
+    border: black;
+    border-width: 5;
+}
